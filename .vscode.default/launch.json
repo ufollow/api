@@ -6,9 +6,9 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/src/api/bin/Debug/netcoreapp2.2/api.dll",
+      "program": "${workspaceFolder}/src/ufollow.Application/bin/Debug/netcoreapp2.2/ufollow.Application.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/src/api",
+      "cwd": "${workspaceFolder}/src/ufollow.Application",
       "stopAtEntry": false,
       "serverReadyAction": {
         "action": "openExternally",
