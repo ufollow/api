@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace api
+namespace ufollow.Application
 {
     public class Startup
     {
@@ -26,7 +26,6 @@ namespace api
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseStaticFiles();
             app.UseMvc();
         }
     }
