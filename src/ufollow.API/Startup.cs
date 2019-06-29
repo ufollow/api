@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ufollow.API.Filters;
 
 namespace ufollow.API
 {
@@ -16,7 +17,10 @@ namespace ufollow.API
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvc(options =>
+            {
+                options.Filters.Add(new ModelValidationAttribute());
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
