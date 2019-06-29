@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ufollow.Application", "ufollow.Application\ufollow.Application.csproj", "{0D763C6C-39E8-45E6-BE96-CF52DC6E8F38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ufollow.API", "ufollow.API\ufollow.API.csproj", "{0D763C6C-39E8-45E6-BE96-CF52DC6E8F38}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ufollow.Domain", "ufollow.Domain\ufollow.Domain.csproj", "{D57AC917-9255-4DF5-B254-015586874712}"
 EndProject

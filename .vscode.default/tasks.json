@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/src/ufollow.Application/ufollow.Application.csproj"
+        "${workspaceFolder}/src/ufollow.API/ufollow.API.csproj"
       ],
       "problemMatcher": "$tsc"
     },
@@ -17,7 +17,7 @@
       "type": "process",
       "args": [
         "publish",
-        "${workspaceFolder}/src/ufollow.Application/ufollow.Application.csproj"
+        "${workspaceFolder}/src/ufollow.API/ufollow.API.csproj"
       ],
       "problemMatcher": "$tsc"
     },
@@ -28,7 +28,7 @@
       "args": [
         "watch",
         "run",
-        "${workspaceFolder}/src/ufollow.Application/ufollow.Application.csproj"
+        "${workspaceFolder}/src/ufollow.API/ufollow.API.csproj"
       ],
       "problemMatcher": "$tsc"
     }

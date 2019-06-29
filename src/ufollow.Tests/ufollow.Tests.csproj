@@ -9,6 +9,6 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ufollow.Application\ufollow.Application.csproj" />
+    <ProjectReference Include="..\ufollow.API\ufollow.API.csproj" />
   </ItemGroup>
 </Project>
