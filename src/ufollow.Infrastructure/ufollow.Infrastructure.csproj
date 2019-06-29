@@ -4,6 +4,8 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AWSSDK.S3" Version="3.3.102.22" />
+    <PackageReference Include="NETCore.MailKit" Version="2.0.2" />
+    <PackageReference Include="WebMarkupMin.Core" Version="2.5.8" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ufollow.Domain\ufollow.Domain.csproj" />
