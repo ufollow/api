@@ -7,10 +7,10 @@ using ufollow.Domain.Repositories;
 
 namespace ufollow.Infrastructure.AmazonS3
 {
-    public class AmazonS3Api : IFileRepository
+    public sealed class AmazonS3Api : IFileRepository
     {
-        private AmazonS3Options _options;
-        private AmazonS3Client _client;
+        private readonly AmazonS3Options _options;
+        private readonly AmazonS3Client _client;
 
         public AmazonS3Api(AmazonS3Options options)
         {

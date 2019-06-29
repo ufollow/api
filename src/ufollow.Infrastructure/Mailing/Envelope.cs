@@ -1,6 +1,6 @@
 namespace ufollow.Infrastructure.Mailing
 {
-    public class Envelope
+    public sealed class Envelope
     {
         public string SenderName { get; set; }
         public string SenderEmail { get; set; }

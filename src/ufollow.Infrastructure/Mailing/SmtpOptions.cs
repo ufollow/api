@@ -1,6 +1,6 @@
 namespace ufollow.Infrastructure.Mailing
 {
-    public class SmtpOptions
+    public sealed class SmtpOptions
     {
         public string Username { get; set; }
         public string Password { get; set; }
