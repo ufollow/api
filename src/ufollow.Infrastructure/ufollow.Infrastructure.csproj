@@ -3,6 +3,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="3.3.102.22" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\ufollow.Domain\ufollow.Domain.csproj" />
   </ItemGroup>
 </Project>
