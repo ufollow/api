@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ufollow.API.Models.Errors
 {
-    public sealed class UnprocessableEntityJson : IActionResult
+    public class UnprocessableEntityJson : IActionResult
     {
         public UnprocessableEntityJson() { }
 
