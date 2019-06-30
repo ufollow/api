@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using MailKit.Net.Smtp;
 using MimeKit;
 
-namespace ufollow.Infrastructure.Mailing
+namespace ufollow.Infrastructure.Mailing.Smtp
 {
     public sealed class SmtpMailer : IMailer
     {

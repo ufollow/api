@@ -1,4 +1,4 @@
-namespace ufollow.Infrastructure.Mailing
+namespace ufollow.Infrastructure.Mailing.Smtp
 {
     public sealed class SmtpOptions
     {
