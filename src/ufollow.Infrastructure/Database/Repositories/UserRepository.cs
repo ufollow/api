@@ -20,7 +20,7 @@ namespace ufollow.Infrastructure.Database.Repositories
             _dbContext.Users.Add(user);
         }
 
-        public async Task<bool> AnyUserWithEmail(string email)
+        public async Task<bool> HasUserWithEmail(string email)
         {
             return await _dbContext.Users
                 .Where(user => user.Credentials.Email == email)

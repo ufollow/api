@@ -21,7 +21,7 @@ namespace ufollow.API.Commands
 
         public async Task SignUp(SignUpModel dto)
         {
-            IsEmailAlreadyTaken = await _userRepository.AnyUserWithEmail(dto.Email);
+            IsEmailAlreadyTaken = await _userRepository.HasUserWithEmail(dto.Email);
 
             if (IsEmailAlreadyTaken) return;
 

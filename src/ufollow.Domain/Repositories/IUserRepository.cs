@@ -8,7 +8,7 @@ namespace ufollow.Domain.Repositories
         void Add(User user);
         Task<User> FindById(long id);
         Task<User> FindByEmail(string email);
-        Task<bool> AnyUserWithEmail(string email);
+        Task<bool> HasUserWithEmail(string email);
         void Remove(User user);
     }
 }
