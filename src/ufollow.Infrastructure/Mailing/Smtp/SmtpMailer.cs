@@ -16,12 +16,12 @@ namespace ufollow.Infrastructure.Mailing.Smtp
         public async Task Send(Envelope envelope)
         {
             var body = new BodyBuilder();
-            body.HtmlBody = envelope.Message.Minified();
+            body.HtmlBody = envelope.Message.Content.Minified();
 
             var mimeMessage = new MimeMessage();
-            mimeMessage.From.Add(new MailboxAddress(envelope.SenderName, envelope.SenderEmail));
-            mimeMessage.To.Add(new MailboxAddress(envelope.RecipientName, envelope.RecipientEmail));
-            mimeMessage.Subject = envelope.Subject;
+            mimeMessage.From.Add(new MailboxAddress(envelope.Sender.Name, envelope.Sender.Address));
+            mimeMessage.To.Add(new MailboxAddress(envelope.Recipient.Name, envelope.Recipient.Address));
+            mimeMessage.Subject = envelope.Message.Subject;
             mimeMessage.Body = body.ToMessageBody();
 
             using (var client = new SmtpClient())
@@ -35,6 +35,5 @@ namespace ufollow.Infrastructure.Mailing.Smtp
                 client.Disconnect(true);
             }
         }
-
     }
 }

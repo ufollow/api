@@ -25,12 +25,12 @@ namespace ufollow.Domain.Entities
 
         public void ChangePassword(ProtectedPassword password)
         {
-            PasswordLastChange = DateTime.UtcNow;
-
             Credentials = new Credentials(
                 email: Credentials.Email,
                 password: password
             );
+
+            PasswordLastChange = DateTime.UtcNow;
         }
 
         public void CollaborateTo(Account account)

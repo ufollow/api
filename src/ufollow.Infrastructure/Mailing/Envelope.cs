@@ -2,11 +2,15 @@ namespace ufollow.Infrastructure.Mailing
 {
     public sealed class Envelope
     {
-        public string SenderName { get; set; }
-        public string SenderEmail { get; set; }
-        public string RecipientName { get; set; }
-        public string RecipientEmail { get; set; }
-        public string Subject { get; set; }
-        public HtmlMessage Message { get; set; }
+        public Envelope(Mailbox sender, Mailbox recipient, MailMessage message)
+        {
+            Sender = sender;
+            Recipient = recipient;
+            Message = message;
+        }
+
+        public Mailbox Sender { get; private set; }
+        public Mailbox Recipient { get; private set; }
+        public MailMessage Message { get; private set; }
     }
 }
